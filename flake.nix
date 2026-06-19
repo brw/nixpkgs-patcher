@@ -164,7 +164,7 @@
                     ```nix
                     { config, ... }:
                     {
-                      nix.nixPath = [ "nixpkgs=${config.nixpkgs-patcher.patchedNixpkgs}" ];
+                      nix.nixPath = [ "nixpkgs=''${config.nixpkgs-patcher.patchedNixpkgs}" ];
                     }
                     ```
                   '';
