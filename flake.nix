@@ -148,7 +148,7 @@
                 enable = mkEnableOption "nixpkgs-patcher";
                 patchedNixpkgs = mkOption {
                   type = types.path;
-                  default = finalNixpkgs;
+                  default = finalNixpkgs.outPath;
                   readOnly = true;
                   description = ''
                     The nixpkgs source this system was evaluated against, with
