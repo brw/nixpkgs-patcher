@@ -48,7 +48,8 @@
           pkgs,
         }:
         pkgs.applyPatches {
-          name = "nixpkgs-${nixpkgsVersion { inherit nixpkgs patches; }}";
+          # name = "nixpkgs-${nixpkgsVersion { inherit nixpkgs patches; }}";
+          name = "source";
           src = nixpkgs;
 
           inherit patches;
